@@ -1,0 +1,146 @@
+html,
+body{
+	height:100%;
+}
+
+body{
+	font-family      : $font-family-base;
+	font-size        : $font-size-base;
+	line-height      : $line-height-base;
+	color            : $text-color;
+	background-color : $body-bg;
+	background       : url('/images/bg.png') 0 0 repeat;
+
+	@media (max-width: $break-point) {
+   	 	padding: 0 $space-box ;
+  	}
+}
+
+.main-container{
+
+	@include valign(".container-center");
+
+}
+.bar-init{
+	background : $primary-color ;
+	height     : $bar-height;
+	position   : fixed;
+	top        : 0;
+	left       : 0;
+	width      : 100%;
+}
+
+hr.separator{
+	margin : $space-box 0;
+	border: 1px solid rgba(255,255,255,0.1);
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.4));
+}
+
+.btn{
+	display          : inline-block;
+	margin-bottom    : 0;
+	font-weight      : 400;
+	text-align       : center;
+	vertical-align   : middle;
+	touch-action     : manipulation;
+	cursor           : pointer;
+	background-image : none;
+	border           : 1px solid transparent;
+	white-space      : nowrap;
+}
+
+.main-content{
+
+	max-width : $content-width;
+	padding   : $space-box;
+	margin    : 0 auto;
+	border    : 1px solid rgba(0, 0, 0, 0.1);
+	background: $content-bg;
+	@include border-radius(5px);
+	@include material-shadow(1);
+
+
+	.content-information{
+
+		img{
+			width         : 144px;
+			border-radius : 144px;
+			@include material-shadow(1);
+			margin-bottom: $space-box;
+		}
+
+		margin-bottom: $space-box;
+
+		h1{
+
+			font-weight : 500;
+			font-size   : 20px;
+			margin      : 0;
+			color       : darken($primary-color, 4%);
+
+		}
+		h3{
+
+			font-size   : 16px;
+			font-weight : 400;
+			margin      : $space-box/1.5 0;
+
+		}
+		h5{
+			font-size   : 14px;
+			font-weight : 400;
+			margin      : $space-box/1.5 0;
+		}
+
+
+	}
+
+	.content-description{
+
+		font-size   : 14px;
+		line-height : 24px;
+
+	}
+
+	.content-social{
+
+		margin-top: 25px;
+
+		.nav-inline{
+
+			padding : 0;
+			margin  : 0;
+
+			li{
+
+				list-style   : none;
+				display      : inline-block;
+				margin-right : 10px;
+
+				a{
+					padding          : 8px 15px;
+					background-color : transparent;
+					border           : 1px solid rgb(200,200,200);
+					font-weight      : 300;
+					color            : $primary-color;
+					@include transition(all .15s);
+					@include border-radius(3px);
+
+					&:hover,
+					&:focus,
+					&:active{
+						color: rgb(255,255,255);
+						background: darken($primary-color, 10%);
+						border-color: darken($primary-color, 10%);;
+						@include animation-name(tada);
+						@include animation-duration(.75s);
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
+

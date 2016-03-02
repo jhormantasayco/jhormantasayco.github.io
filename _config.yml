@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title : Jhorman Tasayco | Software Developer
+description: > # this means to ignore newlines until "baseurl:"
+    Consultor, gestor y desarrollador de soluciones web
+baseurl   : ""
+url       : "http://yourdomain.com" # the base hostname & protocol for your site
+full_name : "Jhorman Alexander Tasayco Tasayco"
+job       : "Full Stack Web Developer"
+location  : "Lima, Perú"
+information: >
+    Consultor, gestor y desarrollador  de soluciones web con más de tres años de experiencia en la
+    implementación de aplicaciones integras  desde la incepción del proyecto hasta su desarrollo,
+    despliegue y soporte.
+twitter_page  : https://twitter.com/jhormantasayco
+github_page   : https://github.com/jhormantasayco
+linkedin_page : https://www.linkedin.com/pub/jhorman-tasayco/55/2b9/487
+email         : jhormantasayco@gmail.com
+ua_code       : UA-XXXXX-X

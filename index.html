@@ -1,0 +1,55 @@
+---
+layout: layout
+---
+
+<div class="main-content" role="main">
+
+	<div class="content-information" itemscope itemtype="http://schema.org/Person">
+		<img src="{{ '/images/image.jpg' | prepend: site.baseurl }}" alt="{{ site.full_name }}" itemprop="image">
+		<h1 itemprop="name">
+			{{ site.full_name }}
+		</h1>
+		<h3 itemprop="jobTitle">
+			{{ site.job }}
+		</h3>
+		<h5 itemprop="address">
+			<i class="fa fa-map-marker"></i> {{ site.location }}
+		</h5>
+	</div><!-- /.content-information -->
+
+	<hr class="separator">
+
+	<div class="content-description">
+		<p>
+			{{ site.information }}
+		</p>
+	</div><!-- /.content-description -->
+
+	<hr class="separator">
+
+	<div class="content-social">
+		<ul class="nav-inline">
+			<li>
+				<a href="{{ site.twitter_page }}" target="_blank" class="btn" title="Twitter">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="{{ site.github_page }}" target="_blank" class="btn" title="Github">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+			<li>
+				<a href="{{ site.linkedin_page }}" target="_blank" class="btn" title="Linkedin">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="mailto:{{ site.email }}" class="btn" title="E-Mail">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</li>
+		</ul>
+	</div><!-- /.content-social -->
+
+</div><!-- /.main-content -->
