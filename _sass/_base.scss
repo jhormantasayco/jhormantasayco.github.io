@@ -59,6 +59,9 @@ hr.separator{
 	@include border-radius(5px);
 	@include material-shadow(1);
 
+	@media (max-width: $break-point) {
+   	 	margin  : $space-box + $bar-height auto $space-box auto;
+  	}
 
 	.content-information{
 
