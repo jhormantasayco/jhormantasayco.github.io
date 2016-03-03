@@ -8,9 +8,9 @@
 # Site settings
 title : Jhorman Tasayco | Software Developer
 description: > # this means to ignore newlines until "baseurl:"
-    Consultor, gestor y desarrollador de soluciones web
-baseurl   : ""
-url       : "http://jhormantasayco.github.io/" # the base hostname & protocol for your site
+    Desarrollador de soluciones web.
+baseurl   : "http://jhormantasayco.github.io"
+url       : "http://jhormantasayco.github.io" # the base hostname & protocol for your site
 full_name : "Jhorman Alexander Tasayco Tasayco"
 job       : "Full Stack Web Developer"
 location  : "Lima, Perú"
